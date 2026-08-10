@@ -9,12 +9,13 @@
   var finePointer = window.matchMedia('(pointer: fine)').matches;
 
   /* ------------------------------------------------------------------
-     Cinematic entry — full 8s first visit, short for returning visitors
+     Cinematic entry — full ~7.5s first visit, short for returning visitors
      ------------------------------------------------------------------ */
   var intro = document.getElementById('intro');
+  function entered() { document.body.classList.add('entered'); }
+
   if (intro) {
     var skipBtn = document.getElementById('introSkip');
-    var enterBtn = document.getElementById('introEnter');
     var sessionSkip = false;
     var fullSeen = false;
     try {
@@ -25,6 +26,7 @@
 
     if (!playable) {
       intro.setAttribute('hidden', '');
+      entered();
     } else {
       var shortMode = !!fullSeen;
       var compact = window.matchMedia('(max-width: 900px)').matches;
@@ -45,6 +47,7 @@
         window.clearTimeout(autoTimer);
 
         intro.classList.add('is-transition');
+        entered();
 
         var photo = intro.querySelector('.intro__photo');
         var heroImg = document.querySelector('.hero .portrait img');
@@ -78,10 +81,9 @@
           beginTransition();
         });
       }
-      if (enterBtn) {
-        enterBtn.addEventListener('click', beginTransition);
-      }
     }
+  } else {
+    entered();
   }
 
   /* ------------------------------------------------------------------
@@ -124,6 +126,12 @@
     if (now.getMonth() < birth.getMonth() || (now.getMonth() === birth.getMonth() && now.getDate() < birth.getDate())) age--;
     ageEl.textContent = age;
   }
+
+  /* ------------------------------------------------------------------
+     Footer year
+     ------------------------------------------------------------------ */
+  var yearEl = document.getElementById('year');
+  if (yearEl) yearEl.textContent = new Date().getFullYear();
 
   /* ------------------------------------------------------------------
      Scroll reveal
@@ -196,7 +204,7 @@
     requestAnimationFrame(moveRing);
 
     document.addEventListener('mouseover', function (e) {
-      var t = e.target.closest('a, button, input, textarea, .project-card, .skill-group, .skill-chip, .achievement, .direction, .channel, .stat, .sys-tag');
+      var t = e.target.closest('a, button, input, textarea, .project-card, .skill-group, .skill-chip, .achievement, .direction, .channel, .stat, .sys-tag, .featured');
       ring.classList.toggle('is-hovering', !!t);
     });
     document.addEventListener('mouseleave', function () {
@@ -303,6 +311,22 @@
      Project detail modal
      ------------------------------------------------------------------ */
   var PROJECTS = {
+    'biostore': {
+      category: 'Full-Stack Web App · E-Commerce',
+      title: 'BioStore',
+      tagline: 'A complete e-commerce experience for organic and bio products — catalog, cart, checkout and admin panel, built end to end.',
+      story: [
+        { label: 'The Problem', text: 'Small bio-products sellers are scattered across social media. There is no single place to browse a catalog, compare and order — and no easy way for the seller to manage products.' },
+        { label: 'The Idea', text: 'One clean storefront where products live in a real database, customers browse and order, and the owner manages everything from a simple admin panel.' },
+        { label: 'The Solution', text: 'A full-stack application: PHP and MySQL power the data layer, with a responsive front-end for the shop and a protected admin area for managing products, orders and inventory.' },
+        { label: 'The Technology', text: 'Semantic HTML and CSS for the storefront, JavaScript for interaction, PHP for the application logic, MySQL for the relational data model.' },
+        { label: 'The Result', text: 'A working, usable digital product — and my most complete demonstration of the full development cycle so far.' }
+      ],
+      role: 'Solo developer — design, database schema, front-end & back-end',
+      features: ['Product catalog & search', 'Shopping cart & checkout flow', 'Order history & authentication', 'Protected admin panel', 'Responsive storefront', 'MySQL relational data model'],
+      tags: ['HTML5', 'CSS3', 'JavaScript', 'PHP', 'MySQL'],
+      links: [{ label: 'View Code', href: 'https://github.com/ademhammami', external: true }]
+    },
     'ai-chat': {
       category: 'AI · Intelligent Systems',
       title: 'AI Chat Assistant',
@@ -386,7 +410,8 @@
 
       var links = modal.querySelector('#modalLinks');
       links.innerHTML = p.links.map(function (l) {
-        return '<a href="' + esc2(l.href) + '"' + (l.href.indexOf('#') === 0 ? '' : ' target="_blank" rel="noopener"') + '>' + esc2(l.label) + ' ↗</a>';
+        var external = l.external || (l.href.indexOf('#') !== 0);
+        return '<a href="' + esc2(l.href) + '"' + (external ? ' target="_blank" rel="noopener"' : '') + '>' + esc2(l.label) + ' ↗</a>';
       }).join('');
 
       modal.hidden = false;
@@ -420,29 +445,6 @@
         if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus(); }
         else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
       }
-    });
-  }
-
-  /* ------------------------------------------------------------------
-     Contact form → mailto (no backend needed)
-     ------------------------------------------------------------------ */
-  var form = document.getElementById('contactForm');
-  var note = document.getElementById('formNote');
-  if (form) {
-    form.addEventListener('submit', function (e) {
-      e.preventDefault();
-      var name = form.name.value.trim();
-      var email = form.email.value.trim();
-      var message = form.message.value.trim();
-      if (!name || !email || !message) {
-        note.textContent = '// Please fill in every field.';
-        return;
-      }
-      var subject = encodeURIComponent('Hello Adem — ' + name);
-      var body = encodeURIComponent('Hi Adem,\n\n' + message + '\n\n— ' + name + ' (' + email + ')');
-      window.location.href = 'mailto:ademh9735@gmail.com?subject=' + subject + '&body=' + body;
-      note.textContent = '// Opening your email client — talk soon.';
-      form.reset();
     });
   }
 })();

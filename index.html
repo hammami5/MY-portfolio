@@ -3,34 +3,41 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-  <title>Adem Hammami — Computer Science Student, ISIMS Sfax</title>
+  <title>Adem Hammami — Computer Science Student | ISIMS Sfax</title>
+
   <meta name="description" content="Adem Hammami — Computer Science student at ISIMS Sfax, Tunisia. Building digital experiences with code: software development, web applications, intelligent systems and digital products.">
-  <meta name="keywords" content="Computer Science Student, ISIMS Sfax, Software Developer, Web Development, Artificial Intelligence, Digital Products, Adem Hammami">
+  <meta name="keywords" content="Computer Science Student, ISIMS Sfax, Software Developer, Web Development, PHP, MySQL, Artificial Intelligence, Digital Products, Adem Hammami">
   <meta name="author" content="Adem Hammami">
   <meta name="robots" content="index, follow">
-  <meta name="theme-color" content="#070707">
+  <meta name="theme-color" content="#050505">
   <meta name="geo.region" content="TN">
   <meta name="geo.placename" content="Sfax">
 
   <!-- Open Graph -->
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Adem Hammami — Computer Science Student, ISIMS Sfax">
-  <meta property="og:description" content="Building digital experiences with code. Software, intelligent systems and real-world digital products.">
-  <meta property="og:image" content="imj.jpeg">
+  <meta property="og:url" content="https://hammami5.github.io/MY-portfolio/">
+  <meta property="og:title" content="Adem Hammami — Computer Science Student | ISIMS Sfax">
+  <meta property="og:description" content="Building digital experiences with code. Software, intelligent systems and real digital products.">
+  <meta property="og:image" content="assets/images/photo.jpg">
+  <meta property="og:image:alt" content="Adem Hammami — Computer Science Student at ISIMS Sfax">
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Adem Hammami — Computer Science Student">
   <meta name="twitter:description" content="Building digital experiences with code.">
+  <meta name="twitter:image" content="assets/images/photo.jpg">
 
-  <!-- Favicon (inline, no external asset) -->
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23070707'/%3E%3Cpath d='M22 20l10 12-10 12' fill='none' stroke='%23c9b98a' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M36 44h8' fill='none' stroke='%23c9b98a' stroke-width='4' stroke-linecap='round'/%3E%3C/svg%3E">
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
+  <link rel="apple-touch-icon" href="assets/icons/favicon.svg">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700;800&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="assets/style.css">
+  <link rel="stylesheet" href="style.css">
+
+  <script>document.documentElement.classList.add('js');</script>
 
   <!-- Structured data -->
   <script type="application/ld+json">
@@ -40,15 +47,18 @@
     "name": "Adem Hammami",
     "jobTitle": "Computer Science Student",
     "email": "mailto:ademh9735@gmail.com",
+    "url": "https://hammami5.github.io/MY-portfolio/",
     "alumniOf": { "@type": "CollegeOrUniversity", "name": "ISIMS Sfax" },
     "address": { "@type": "PostalAddress", "addressLocality": "Sfax", "addressCountry": "TN" },
-    "knowsAbout": ["Computer Science", "Web Development", "Software Engineering", "Artificial Intelligence", "Databases", "Digital Products"]
+    "knowsAbout": ["Computer Science", "Web Development", "Software Engineering", "PHP", "MySQL", "Artificial Intelligence", "Databases", "Digital Products"]
   }
   </script>
 </head>
 <body>
 
-  <!-- Cinematic entry — extended premium CS opening -->
+  <!-- ================================================================
+       CINEMATIC INTRO — personal system
+       ================================================================ -->
   <div class="intro" id="intro" hidden aria-hidden="true">
     <div class="intro__bg" aria-hidden="true">
       <div class="intro__grid"></div>
@@ -110,12 +120,11 @@
     <span class="intro__corner mono" aria-hidden="true">Adem Hammami · System 1.0</span>
 
     <button class="intro__skip mono" id="introSkip" type="button">Skip →</button>
-    <button class="intro__enter mono" id="introEnter" type="button">Enter experience →</button>
 
     <div class="intro__inner">
       <div class="intro__photo-wrap">
         <figure class="intro__photo">
-          <img src="imj.jpeg" alt="Adem Hammami" width="788" height="849" decoding="async">
+          <img src="assets/images/photo.jpg" alt="Adem Hammami" width="788" height="849" decoding="async">
         </figure>
         <span class="intro__ring" aria-hidden="true"></span>
       </div>
@@ -148,7 +157,9 @@
   <div class="cursor-dot" aria-hidden="true"></div>
   <div class="cursor-ring" aria-hidden="true"></div>
 
-  <!-- Navigation -->
+  <!-- ================================================================
+       NAVIGATION
+       ================================================================ -->
   <nav class="nav" id="navbar" aria-label="Primary">
     <div class="container nav__inner">
       <a class="nav__brand" href="#hero" aria-label="Adem Hammami — back to top">
@@ -160,7 +171,7 @@
         <li><a href="#hero" class="nav__link" data-spy><span class="nav__idx mono">00</span>Home</a></li>
         <li><a href="#about" class="nav__link" data-spy><span class="nav__idx mono">01</span>About</a></li>
         <li><a href="#skills" class="nav__link" data-spy><span class="nav__idx mono">02</span>Skills</a></li>
-        <li><a href="#projects" class="nav__link" data-spy><span class="nav__idx mono">03</span>Work</a></li>
+        <li><a href="#projects" class="nav__link" data-spy><span class="nav__idx mono">03</span>Projects</a></li>
         <li><a href="#journey" class="nav__link" data-spy><span class="nav__idx mono">04</span>Journey</a></li>
         <li><a href="#contact" class="nav__link" data-spy><span class="nav__idx mono">05</span>Contact</a></li>
       </ul>
@@ -182,7 +193,7 @@
         <a href="#hero" class="menu__link" style="--mi:0"><span class="menu__num mono">00</span><span>Home</span></a>
         <a href="#about" class="menu__link" style="--mi:1"><span class="menu__num mono">01</span><span>About</span></a>
         <a href="#skills" class="menu__link" style="--mi:2"><span class="menu__num mono">02</span><span>Skills</span></a>
-        <a href="#projects" class="menu__link" style="--mi:3"><span class="menu__num mono">03</span><span>Work</span></a>
+        <a href="#projects" class="menu__link" style="--mi:3"><span class="menu__num mono">03</span><span>Projects</span></a>
         <a href="#journey" class="menu__link" style="--mi:4"><span class="menu__num mono">04</span><span>Journey</span></a>
         <a href="#contact" class="menu__link" style="--mi:5"><span class="menu__num mono">05</span><span>Contact</span></a>
       </nav>
@@ -199,7 +210,9 @@
 
   <main id="main">
 
-    <!-- ================= HERO ================= -->
+    <!-- ================================================================
+         HERO
+         ================================================================ -->
     <section class="hero" id="hero" aria-label="Introduction">
       <div class="container hero__grid">
 
@@ -240,7 +253,7 @@
             </div>
             <div class="hero__meta-item">
               <dt class="mono">Focus</dt>
-              <dd>Software · AI · Products</dd>
+              <dd>Software · Data · AI</dd>
             </div>
           </dl>
         </div>
@@ -249,11 +262,11 @@
           <div class="portrait-wrap" data-parallax>
             <div class="portrait-grid" aria-hidden="true"></div>
 
-            <span class="portrait__label portrait__label--tl mono" aria-hidden="true">profile.jpg</span>
+            <span class="portrait__label portrait__label--tl mono" aria-hidden="true">adem_hammami.jpg</span>
             <span class="portrait__label portrait__label--br mono" aria-hidden="true">isims_sfax · cs · <b>2026</b></span>
 
             <figure class="portrait">
-              <img src="imj.jpeg" alt="Portrait of Adem Hammami" width="788" height="849" fetchpriority="high" decoding="async">
+              <img src="assets/images/photo.jpg" alt="Portrait of Adem Hammami" width="788" height="849" fetchpriority="high" decoding="async">
               <span class="portrait__corner portrait__corner--tl" aria-hidden="true"></span>
               <span class="portrait__corner portrait__corner--br" aria-hidden="true"></span>
               <figcaption class="portrait__meta mono">
@@ -263,7 +276,7 @@
             </figure>
 
             <span class="sys-tag portrait__tag--tr mono"><i aria-hidden="true"></i>status // building</span>
-            <span class="sys-tag portrait__tag--bl mono"><i aria-hidden="true"></i>focus // ai</span>
+            <span class="sys-tag portrait__tag--bl mono"><i aria-hidden="true"></i>focus // full-stack</span>
           </div>
         </div>
 
@@ -275,7 +288,9 @@
       </div>
     </section>
 
-    <!-- ================= ABOUT ================= -->
+    <!-- ================================================================
+         ABOUT
+         ================================================================ -->
     <section class="section" id="about">
       <div class="container">
         <header class="section__head reveal">
@@ -315,11 +330,11 @@
               </div>
               <div class="stat">
                 <dt class="mono stat__label">Projects</dt>
-                <dd class="stat__value" data-count="3">0</dd>
+                <dd class="stat__value" data-count="4">4</dd>
               </div>
               <div class="stat">
                 <dt class="mono stat__label">Technologies</dt>
-                <dd class="stat__value" data-count="6" data-suffix="+">0</dd>
+                <dd class="stat__value" data-count="9" data-suffix="+">9+</dd>
               </div>
               <div class="stat">
                 <dt class="mono stat__label">Curiosity</dt>
@@ -331,11 +346,13 @@
       </div>
     </section>
 
-    <!-- ================= SKILLS ================= -->
+    <!-- ================================================================
+         SKILLS
+         ================================================================ -->
     <section class="section section--alt" id="skills">
       <div class="container">
         <header class="section__head reveal">
-          <p class="section__label mono"><span class="section__num">02</span><span class="section__rule" aria-hidden="true"></span>Expertise</p>
+          <p class="section__label mono"><span class="section__num">02</span><span class="section__rule" aria-hidden="true"></span>Skills</p>
           <h2 class="section__title">A toolkit built<br><span class="section__title-accent">to be used.</span></h2>
           <p class="section__desc">Organized by discipline, not decoration — built through projects, coursework and continuous self-study.</p>
         </header>
@@ -361,12 +378,13 @@
           <article class="skill-group reveal" data-delay="80">
             <header class="skill-group__head">
               <span class="skill-group__num mono">02</span>
-              <h3 class="skill-group__title">Data</h3>
+              <h3 class="skill-group__title">Database</h3>
               <span class="skill-group__tag mono">working</span>
             </header>
             <p class="skill-group__desc">Storing, querying and making sense of real data.</p>
             <ul class="skill-group__list">
               <li class="skill-chip mono">SQL</li>
+              <li class="skill-chip mono">MySQL</li>
               <li class="skill-chip mono">Relational design</li>
               <li class="skill-chip mono">Data-driven apps</li>
             </ul>
@@ -380,10 +398,11 @@
             </header>
             <p class="skill-group__desc">The habits that make the work reliable and repeatable.</p>
             <ul class="skill-group__list">
-              <li class="skill-chip mono">Git &amp; GitHub</li>
+              <li class="skill-chip mono">Git</li>
+              <li class="skill-chip mono">GitHub</li>
+              <li class="skill-chip mono">VS Code</li>
               <li class="skill-chip mono">Clean code</li>
               <li class="skill-chip mono">Web standards</li>
-              <li class="skill-chip mono">Self-learning</li>
             </ul>
           </article>
 
@@ -397,89 +416,137 @@
             <ul class="skill-group__list">
               <li class="skill-chip mono">Python</li>
               <li class="skill-chip mono">NLP</li>
-              <li class="skill-chip mono">Intelligent systems</li>
               <li class="skill-chip mono">AI fundamentals</li>
+              <li class="skill-chip mono">Intelligent systems</li>
             </ul>
           </article>
         </div>
 
         <p class="stack-strip mono reveal">
           <span class="stack-strip__label">// core stack</span>
-          <span class="stack-strip__items">HTML <span class="stack-strip__sep" aria-hidden="true">·</span> CSS <span class="stack-strip__sep" aria-hidden="true">·</span> JS <span class="stack-strip__sep" aria-hidden="true">·</span> PHP <span class="stack-strip__sep" aria-hidden="true">·</span> SQL <span class="stack-strip__sep" aria-hidden="true">·</span> Python</span>
+          <span class="stack-strip__items">HTML <span class="stack-strip__sep" aria-hidden="true">·</span> CSS <span class="stack-strip__sep" aria-hidden="true">·</span> JS <span class="stack-strip__sep" aria-hidden="true">·</span> PHP <span class="stack-strip__sep" aria-hidden="true">·</span> SQL <span class="stack-strip__sep" aria-hidden="true">·</span> MySQL <span class="stack-strip__sep" aria-hidden="true">·</span> Python</span>
         </p>
       </div>
     </section>
 
-    <!-- ================= FEATURED ================= -->
-    <section class="section" id="featured">
+    <!-- ================================================================
+         FEATURED PROJECT — BIOSTORE
+         ================================================================ -->
+    <section class="section" id="projects">
       <div class="container">
         <header class="section__head reveal">
-          <p class="section__label mono"><span class="section__num">03</span><span class="section__rule" aria-hidden="true"></span>Case Study</p>
-          <h2 class="section__title">One idea,<br><span class="section__title-accent">built from zero.</span></h2>
-          <p class="section__desc">The full story of my strongest project so far — from problem to working product.</p>
+          <p class="section__label mono"><span class="section__num">03</span><span class="section__rule" aria-hidden="true"></span>Selected Work</p>
+          <h2 class="section__title">Built to be used,<br><span class="section__title-accent">not just shown.</span></h2>
+          <p class="section__desc">Real projects I designed, developed and shipped. BioStore leads — a full-stack product built end to end.</p>
         </header>
 
-        <article class="featured reveal" id="ai-chat">
+        <article class="featured reveal" id="featured">
           <div class="featured__info">
-            <span class="featured__badge mono">Intelligent Systems</span>
-            <h3 class="featured__title">AI Chat Assistant</h3>
-            <p class="featured__desc">An intelligent conversational assistant powered by machine learning — built to explore how machines understand natural language and respond with meaning.</p>
+            <div class="featured__top">
+              <span class="featured__badge mono">Featured · Full-Stack Web App</span>
+              <span class="featured__num mono">P.01</span>
+            </div>
+            <h3 class="featured__title">BioStore</h3>
+            <p class="featured__desc">A complete e-commerce experience for organic and bio products — catalog, cart, checkout and admin panel, designed and built from scratch as a real product.</p>
 
             <div class="story" role="list">
               <div class="story__step" role="listitem">
                 <p class="mono story__label">The Problem</p>
-                <p class="story__text">Most interfaces only respond to rigid, keyword-perfect input. Ask a question the way people actually talk — and they break.</p>
+                <p class="story__text">Small bio-products sellers are scattered across social media. There's no single place to browse a catalog, compare and order — and no easy way for the seller to manage products.</p>
+              </div>
+              <div class="story__step" role="listitem">
+                <p class="mono story__label">The Idea</p>
+                <p class="story__text">One clean storefront where products live in a real database, customers browse and order, and the owner manages everything from a simple admin panel.</p>
               </div>
               <div class="story__step" role="listitem">
                 <p class="mono story__label">The Solution</p>
-                <p class="story__text">A machine-learning powered system that parses intent and returns relevant, natural responses in real time.</p>
-              </div>
-              <div class="story__step" role="listitem">
-                <p class="mono story__label">The Result</p>
-                <p class="story__text">A working intelligent assistant — and a first, real step into artificial intelligence.</p>
+                <p class="story__text">A full-stack application: PHP and MySQL power the data layer, with a responsive front-end for the shop and a protected admin area for managing products, orders and inventory.</p>
               </div>
             </div>
 
+            <dl class="featured__facts">
+              <div class="featured__fact">
+                <dt class="mono">Technology</dt>
+                <dd>HTML5 · CSS3 · JavaScript · PHP · MySQL</dd>
+              </div>
+              <div class="featured__fact">
+                <dt class="mono">My Role</dt>
+                <dd>Solo developer — design, database schema, front-end &amp; back-end</dd>
+              </div>
+            </dl>
+
             <ul class="project-tags" aria-label="Technologies used">
-              <li>Python</li><li>NLP</li><li>AI</li>
+              <li>HTML5</li><li>CSS3</li><li>JavaScript</li><li>PHP</li><li>MySQL</li>
             </ul>
 
             <div class="featured__actions">
-              <button type="button" class="btn btn--primary magnetic" data-project="ai-chat" aria-haspopup="dialog">
+              <button type="button" class="btn btn--primary magnetic" data-project="biostore" aria-haspopup="dialog">
                 View Case Study
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg>
               </button>
+              <a href="https://github.com/ademhammami" target="_blank" rel="noopener" class="btn btn--ghost magnetic">
+                View Code
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 0 0-1.3-3.2 4.2 4.2 0 0 0-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3 0 0 0-6.2 0C6.5 2.8 5.4 3.1 5.4 3.1a4.2 4.2 0 0 0-.1 3.2A4.6 4.6 0 0 0 4 9.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21"/></svg>
+              </a>
             </div>
           </div>
 
           <div class="featured__visual">
-            <div class="chat-mock" aria-hidden="true">
-              <span class="chat-mock__label mono">conversation.log</span>
-              <div class="chat-mock__msg chat-mock__msg--user">What can you build?</div>
-              <div class="chat-mock__msg chat-mock__msg--ai">
-                <span class="chat-mock__type"><i></i><i></i><i></i></span>
-                <span>Digital experiences — software, products,<br>and intelligent systems.</span>
+            <div class="store-mock" aria-hidden="true">
+              <div class="store-mock__bar">
+                <i></i><i></i><i></i>
+                <b>biostore.tn</b>
+                <span class="store-mock__cart">cart (3)</span>
               </div>
-              <div class="chat-mock__msg chat-mock__msg--user">Who are you?</div>
-              <div class="chat-mock__msg chat-mock__msg--ai">A CS student at ISIMS Sfax,<br>building with intent.</div>
-              <span class="chat-mock__cursor" aria-hidden="true"></span>
+              <div class="store-mock__hero">
+                <span class="store-mock__eyebrow mono">organic · local · fresh</span>
+                <span class="store-mock__title">Nature,<br>delivered.</span>
+              </div>
+              <div class="store-mock__grid">
+                <div class="store-mock__card">
+                  <span class="store-mock__img"></span>
+                  <span class="store-mock__line store-mock__line--1"></span>
+                  <span class="store-mock__line store-mock__line--2"></span>
+                  <span class="store-mock__price">12.500 DT</span>
+                </div>
+                <div class="store-mock__card">
+                  <span class="store-mock__img"></span>
+                  <span class="store-mock__line store-mock__line--1"></span>
+                  <span class="store-mock__line store-mock__line--2"></span>
+                  <span class="store-mock__price">8.900 DT</span>
+                </div>
+              </div>
+              <span class="store-mock__label mono">biostore / storefront</span>
             </div>
           </div>
         </article>
-      </div>
-    </section>
-
-    <!-- ================= PROJECTS ================= -->
-    <section class="section section--alt" id="projects">
-      <div class="container">
-        <header class="section__head reveal">
-          <p class="section__label mono"><span class="section__num">04</span><span class="section__rule" aria-hidden="true"></span>Selected Work</p>
-          <h2 class="section__title">Built to be used,<br><span class="section__title-accent">not just shown.</span></h2>
-          <p class="section__desc">Real projects I designed, developed and shipped. Tap any card for the full story.</p>
-        </header>
 
         <div class="projects">
-          <article class="project-card project-card--wide reveal" data-project="portfolio">
+          <article class="project-card reveal" data-project="ai-chat">
+            <div class="project-card__visual">
+              <div class="chat-visual" aria-hidden="true">
+                <span class="chat-visual__msg chat-visual__msg--ai">How can I help?</span>
+                <span class="chat-visual__msg chat-visual__msg--user">Who are you?</span>
+                <span class="chat-visual__msg chat-visual__msg--ai">A CS student at ISIMS,<br>building with intent.</span>
+              </div>
+            </div>
+            <div class="project-card__body">
+              <div class="project-card__top">
+                <span class="project-card__cat mono">Intelligent Systems</span>
+                <span class="project-card__num mono">P.02</span>
+                <h3 class="project-card__title">AI Chat Assistant</h3>
+              </div>
+              <p class="project-card__desc">A conversational assistant that understands natural language — a first, real step into artificial intelligence.</p>
+              <ul class="project-tags" aria-label="Technologies used">
+                <li>Python</li><li>NLP</li><li>AI</li>
+              </ul>
+              <div class="project-card__actions">
+                <button type="button" class="project-link" data-project="ai-chat">View Project</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-delay="100" data-project="portfolio">
             <div class="project-card__visual">
               <div class="browser-mock" aria-hidden="true">
                 <span class="browser-mock__bar"><i></i><i></i><i></i><b>adem-hammami.dev</b></span>
@@ -492,6 +559,7 @@
             <div class="project-card__body">
               <div class="project-card__top">
                 <span class="project-card__cat mono">Web Development</span>
+                <span class="project-card__num mono">P.03</span>
                 <h3 class="project-card__title">Portfolio Website</h3>
               </div>
               <p class="project-card__desc">A premium, responsive personal portfolio — designed and built from scratch. The site you're looking at right now.</p>
@@ -505,7 +573,7 @@
             </div>
           </article>
 
-          <article class="project-card reveal" data-delay="120" data-project="dashboard">
+          <article class="project-card reveal" data-delay="160" data-project="dashboard">
             <div class="project-card__visual">
               <div class="bars" aria-hidden="true">
                 <i style="--h:42%"></i><i style="--h:68%"></i><i style="--h:35%"></i>
@@ -515,14 +583,15 @@
             <div class="project-card__body">
               <div class="project-card__top">
                 <span class="project-card__cat mono">Web App · Data</span>
+                <span class="project-card__num mono">P.04</span>
                 <h3 class="project-card__title">Data Dashboard</h3>
               </div>
-              <p class="project-card__desc">An interactive analytics dashboard that visualizes datasets with dynamic charts and near real-time updates.</p>
+              <p class="project-card__desc">An interactive analytics dashboard that turns raw data into decisions with dynamic charts.</p>
               <ul class="project-tags" aria-label="Technologies used">
                 <li>JavaScript</li><li>SQL</li><li>PHP</li>
               </ul>
               <div class="project-card__actions">
-                <button type="button" class="project-link" data-project="dashboard">Details</button>
+                <button type="button" class="project-link" data-project="dashboard">View Project</button>
               </div>
             </div>
           </article>
@@ -534,11 +603,13 @@
       </div>
     </section>
 
-    <!-- ================= JOURNEY ================= -->
-    <section class="section" id="journey">
+    <!-- ================================================================
+         JOURNEY
+         ================================================================ -->
+    <section class="section section--alt" id="journey">
       <div class="container">
         <header class="section__head reveal">
-          <p class="section__label mono"><span class="section__num">05</span><span class="section__rule" aria-hidden="true"></span>Journey</p>
+          <p class="section__label mono"><span class="section__num">04</span><span class="section__rule" aria-hidden="true"></span>Journey</p>
           <h2 class="section__title">A path built<br><span class="section__title-accent">step by step.</span></h2>
           <p class="section__desc">Not a CV — a professional journey. Every step sharpens the next.</p>
         </header>
@@ -573,7 +644,6 @@
           </li>
         </ol>
 
-        <!-- Milestones -->
         <div class="milestones reveal">
           <p class="milestones__label mono"><span class="milestones__rule" aria-hidden="true"></span>Milestones</p>
           <ul class="achievements">
@@ -589,8 +659,8 @@
             </li>
             <li class="achievement" data-delay="160">
               <span class="achievement__num mono">03</span>
-              <h3 class="achievement__title">3 projects, shipped</h3>
-              <p class="achievement__desc">From idea to working product — an AI assistant, a portfolio, and a data dashboard.</p>
+              <h3 class="achievement__title">4 projects, shipped</h3>
+              <p class="achievement__desc">From idea to working product — a storefront, an AI assistant, a portfolio and a dashboard.</p>
             </li>
             <li class="achievement" data-delay="240">
               <span class="achievement__num mono">04</span>
@@ -602,11 +672,13 @@
       </div>
     </section>
 
-    <!-- ================= DIRECTION ================= -->
-    <section class="section section--alt" id="direction">
+    <!-- ================================================================
+         DIRECTION
+         ================================================================ -->
+    <section class="section" id="direction">
       <div class="container">
         <header class="section__head reveal">
-          <p class="section__label mono"><span class="section__num">06</span><span class="section__rule" aria-hidden="true"></span>Direction</p>
+          <p class="section__label mono"><span class="section__num">05</span><span class="section__rule" aria-hidden="true"></span>Direction</p>
           <h2 class="section__title">What I'm<br><span class="section__title-accent">building toward.</span></h2>
           <p class="section__desc">Not a claim of expertise — a plan. The craft I'm developing, one project at a time.</p>
         </header>
@@ -659,31 +731,34 @@
       </div>
     </section>
 
-    <!-- ================= BRAND STATEMENT ================= -->
-    <section class="statement" aria-label="Personal brand">
+    <!-- ================================================================
+         PERSONAL PRINCIPLE
+         ================================================================ -->
+    <section class="statement" aria-label="Personal principle">
       <div class="container">
-        <p class="statement__label mono reveal">Personal brand</p>
+        <p class="statement__label mono reveal">Personal principle</p>
         <h2 class="statement__title reveal">
-          <span class="st-1">Learn.</span>
-          <span class="st-2">Build.</span>
-          <span class="st-3">Evolve.</span>
+          <span class="st-1">I build to learn.</span>
+          <span class="st-2">I learn to build.</span>
         </h2>
         <p class="statement__note mono reveal">// one project at a time</p>
       </div>
     </section>
 
-    <!-- ================= CONTACT ================= -->
+    <!-- ================================================================
+         CONTACT
+         ================================================================ -->
     <section class="section section--contact" id="contact">
       <div class="container">
         <header class="section__head section__head--center reveal">
-          <p class="section__label mono section__label--center"><span class="section__num">07</span><span class="section__rule" aria-hidden="true"></span>Contact</p>
+          <p class="section__label mono section__label--center"><span class="section__num">06</span><span class="section__rule" aria-hidden="true"></span>Contact</p>
           <h2 class="section__title">Have an idea<br><span class="section__title-accent">worth building?</span></h2>
           <p class="section__desc section__desc--center">Let's build something meaningful.</p>
         </header>
 
         <div class="contact__cta-row reveal">
           <a href="mailto:ademh9735@gmail.com" class="btn btn--primary magnetic">
-            Contact Me
+            Start a Conversation
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
           </a>
           <a href="https://wa.me/21620470144" target="_blank" rel="noopener" class="btn btn--ghost magnetic">
@@ -692,57 +767,35 @@
           </a>
         </div>
 
-        <div class="contact">
-          <form class="contact__form reveal" id="contactForm" novalidate>
-            <div class="field">
-              <label for="cf-name" class="mono">Name</label>
-              <input type="text" id="cf-name" name="name" placeholder="Your name" autocomplete="name" required>
-            </div>
-            <div class="field">
-              <label for="cf-email" class="mono">Email</label>
-              <input type="email" id="cf-email" name="email" placeholder="you@example.com" autocomplete="email" required>
-            </div>
-            <div class="field">
-              <label for="cf-message" class="mono">Message</label>
-              <textarea id="cf-message" name="message" rows="5" placeholder="Tell me about your idea…" required></textarea>
-            </div>
-            <button type="submit" class="btn btn--primary magnetic">
-              Send Message
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 2 11 13"/><path d="M22 2 15 22l-4-9-9-4Z"/></svg>
-            </button>
-            <p class="contact__form-note mono" id="formNote" role="status" aria-live="polite"></p>
-          </form>
-
-          <div class="contact__channels reveal" data-delay="120">
-            <a href="mailto:ademh9735@gmail.com" class="channel magnetic">
-              <span class="channel__label mono">Email</span>
-              <span class="channel__value">ademh9735@gmail.com</span>
-              <span class="channel__arrow mono" aria-hidden="true">↗</span>
-            </a>
-            <a href="https://github.com/ademhammami" target="_blank" rel="noopener" class="channel magnetic">
-              <span class="channel__label mono">GitHub</span>
-              <span class="channel__value">github.com/ademhammami</span>
-              <span class="channel__arrow mono" aria-hidden="true">↗</span>
-            </a>
-            <a href="https://www.linkedin.com/in/ademhammami" target="_blank" rel="noopener" class="channel magnetic">
-              <span class="channel__label mono">LinkedIn</span>
-              <span class="channel__value">linkedin.com/in/ademhammami</span>
-              <span class="channel__arrow mono" aria-hidden="true">↗</span>
-            </a>
-            <a href="https://instagram.com/adem.hammami" target="_blank" rel="noopener" class="channel magnetic">
-              <span class="channel__label mono">Instagram</span>
-              <span class="channel__value">@adem.hammami</span>
-              <span class="channel__arrow mono" aria-hidden="true">↗</span>
-            </a>
-            <a href="tel:+21620470144" class="channel magnetic">
-              <span class="channel__label mono">Phone</span>
-              <span class="channel__value">+216 20 470 144</span>
-              <span class="channel__arrow mono" aria-hidden="true">↗</span>
-            </a>
-            <div class="channel channel--static">
-              <span class="channel__label mono">Location</span>
-              <span class="channel__value">Sfax, Tunisia · UTC+1</span>
-            </div>
+        <div class="contact__channels reveal">
+          <a href="mailto:ademh9735@gmail.com" class="channel magnetic">
+            <span class="channel__label mono">Email</span>
+            <span class="channel__value">ademh9735@gmail.com</span>
+            <span class="channel__arrow mono" aria-hidden="true">↗</span>
+          </a>
+          <a href="https://github.com/ademhammami" target="_blank" rel="noopener" class="channel magnetic">
+            <span class="channel__label mono">GitHub</span>
+            <span class="channel__value">github.com/ademhammami</span>
+            <span class="channel__arrow mono" aria-hidden="true">↗</span>
+          </a>
+          <a href="https://www.linkedin.com/in/ademhammami" target="_blank" rel="noopener" class="channel magnetic">
+            <span class="channel__label mono">LinkedIn</span>
+            <span class="channel__value">linkedin.com/in/ademhammami</span>
+            <span class="channel__arrow mono" aria-hidden="true">↗</span>
+          </a>
+          <a href="https://instagram.com/adem.hammami" target="_blank" rel="noopener" class="channel magnetic">
+            <span class="channel__label mono">Instagram</span>
+            <span class="channel__value">@adem.hammami</span>
+            <span class="channel__arrow mono" aria-hidden="true">↗</span>
+          </a>
+          <a href="tel:+21620470144" class="channel magnetic">
+            <span class="channel__label mono">Phone</span>
+            <span class="channel__value">+216 20 470 144</span>
+            <span class="channel__arrow mono" aria-hidden="true">↗</span>
+          </a>
+          <div class="channel channel--static">
+            <span class="channel__label mono">Location</span>
+            <span class="channel__value">Sfax, Tunisia · UTC+1</span>
           </div>
         </div>
       </div>
@@ -767,7 +820,7 @@
       </a>
     </div>
     <div class="container">
-      <p class="footer__copy mono">© 2026 Adem Hammami — designed &amp; built by me, no templates.</p>
+      <p class="footer__copy mono">© <span id="year">2026</span> Adem Hammami — designed &amp; built by me, no templates.</p>
     </div>
   </footer>
 
@@ -806,6 +859,6 @@
     </div>
   </div>
 
-  <script src="assets/main.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
