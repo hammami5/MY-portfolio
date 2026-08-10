@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Adem Hammami — Computer Science Student, ISIMS Sfax</title>
+  <meta name="description" content="Adem Hammami — Computer Science student at ISIMS Sfax, Tunisia. Building digital experiences with code: software development, web applications, intelligent systems and digital products.">
+  <meta name="keywords" content="Computer Science Student, ISIMS Sfax, Software Developer, Web Development, Artificial Intelligence, Digital Products, Adem Hammami">
+  <meta name="author" content="Adem Hammami">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#070707">
+  <meta name="geo.region" content="TN">
+  <meta name="geo.placename" content="Sfax">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Adem Hammami — Computer Science Student, ISIMS Sfax">
+  <meta property="og:description" content="Building digital experiences with code. Software, intelligent systems and real-world digital products.">
+  <meta property="og:image" content="imj.jpeg">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Adem Hammami — Computer Science Student">
+  <meta name="twitter:description" content="Building digital experiences with code.">
+
+  <!-- Favicon (inline, no external asset) -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23070707'/%3E%3Cpath d='M22 20l10 12-10 12' fill='none' stroke='%23c9b98a' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M36 44h8' fill='none' stroke='%23c9b98a' stroke-width='4' stroke-linecap='round'/%3E%3C/svg%3E">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/style.css">
+
+  <!-- Structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Adem Hammami",
+    "jobTitle": "Computer Science Student",
+    "email": "mailto:ademh9735@gmail.com",
+    "alumniOf": { "@type": "CollegeOrUniversity", "name": "ISIMS Sfax" },
+    "address": { "@type": "PostalAddress", "addressLocality": "Sfax", "addressCountry": "TN" },
+    "knowsAbout": ["Computer Science", "Web Development", "Software Engineering", "Artificial Intelligence", "Databases", "Digital Products"]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Cinematic entry — extended premium CS opening -->
+  <div class="intro" id="intro" hidden aria-hidden="true">
+    <div class="intro__bg" aria-hidden="true">
+      <div class="intro__grid"></div>
+    </div>
+    <div class="intro__ambient" aria-hidden="true"></div>
+
+    <svg class="intro__net" viewBox="0 0 640 640" preserveAspectRatio="xMidYMid slice" fill="none" aria-hidden="true">
+      <g class="intro__net-links">
+        <path class="net-link" pathLength="1" d="M90 90 L320 300"/>
+        <path class="net-link" pathLength="1" d="M320 300 L200 60"/>
+        <path class="net-link" pathLength="1" d="M320 300 L340 70"/>
+        <path class="net-link" pathLength="1" d="M470 120 L320 300"/>
+        <path class="net-link" pathLength="1" d="M560 210 L320 300"/>
+        <path class="net-link" pathLength="1" d="M590 360 L320 300"/>
+        <path class="net-link" pathLength="1" d="M535 500 L320 300"/>
+        <path class="net-link" pathLength="1" d="M430 570 L320 300"/>
+        <path class="net-link" pathLength="1" d="M300 610 L320 300"/>
+        <path class="net-link" pathLength="1" d="M150 550 L320 300"/>
+        <path class="net-link" pathLength="1" d="M70 430 L320 300"/>
+        <path class="net-link" pathLength="1" d="M52 250 L320 300"/>
+        <path class="net-link net-link--dim" pathLength="1" d="M90 90 L200 60"/>
+        <path class="net-link net-link--dim" pathLength="1" d="M470 120 L560 210"/>
+        <path class="net-link net-link--dim" pathLength="1" d="M535 500 L590 360"/>
+        <path class="net-link net-link--dim" pathLength="1" d="M150 550 L70 430"/>
+      </g>
+      <g class="intro__net-nodes">
+        <circle class="net-node" cx="90" cy="90" r="2.6"/>
+        <circle class="net-node" cx="200" cy="60" r="2.6"/>
+        <circle class="net-node net-node--hot" cx="340" cy="70" r="3"/>
+        <circle class="net-node" cx="470" cy="120" r="2.6"/>
+        <circle class="net-node" cx="560" cy="210" r="2.6"/>
+        <circle class="net-node" cx="590" cy="360" r="2.6"/>
+        <circle class="net-node" cx="535" cy="500" r="2.6"/>
+        <circle class="net-node" cx="430" cy="570" r="2.6"/>
+        <circle class="net-node" cx="300" cy="610" r="2.6"/>
+        <circle class="net-node" cx="150" cy="550" r="2.6"/>
+        <circle class="net-node" cx="70" cy="430" r="2.6"/>
+        <circle class="net-node" cx="52" cy="250" r="2.6"/>
+        <circle class="net-pulse" cx="340" cy="70" r="3"/>
+      </g>
+      <g class="intro__net-code">
+        <text x="150" y="132">precision :: 1.000</text>
+        <text x="420" y="165">fn identity() -&gt; adem</text>
+        <text x="335" y="472">nodes : 12 · links : 16</text>
+        <text x="126" y="330">lat 34.74 / lon 10.75</text>
+      </g>
+    </svg>
+
+    <div class="intro__sys mono" aria-hidden="true">
+      <p class="intro__init">Personal system</p>
+      <p class="intro__init intro__init--state">Initializing…</p>
+      <ol class="intro__manifest">
+        <li class="intro__manifest-i">01 / Identity</li>
+        <li class="intro__manifest-i">02 / Code</li>
+        <li class="intro__manifest-i">03 / Vision</li>
+      </ol>
+    </div>
+
+    <span class="intro__corner mono" aria-hidden="true">Adem Hammami · System 1.0</span>
+
+    <button class="intro__skip mono" id="introSkip" type="button">Skip →</button>
+    <button class="intro__enter mono" id="introEnter" type="button">Enter experience →</button>
+
+    <div class="intro__inner">
+      <div class="intro__photo-wrap">
+        <figure class="intro__photo">
+          <img src="imj.jpeg" alt="Adem Hammami" width="788" height="849" decoding="async">
+        </figure>
+        <span class="intro__ring" aria-hidden="true"></span>
+      </div>
+
+      <div class="intro__copy">
+        <p class="intro__name">Adem Hammami</p>
+        <p class="intro__role mono">Computer Science Student <span aria-hidden="true">/</span> ISIMS Sfax</p>
+        <p class="intro__statement">Building digital experiences with code<span class="intro__statement-dot">.</span></p>
+
+        <div class="intro__status mono" aria-hidden="true">
+          <span class="intro__status-dot" aria-hidden="true"></span>
+          <span>System ready</span>
+        </div>
+        <div class="intro__boot" aria-hidden="true"><i></i></div>
+      </div>
+    </div>
+  </div>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- Ambient background -->
+  <div class="bg" aria-hidden="true">
+    <div class="bg-glow bg-glow--a"></div>
+    <div class="bg-glow bg-glow--b"></div>
+    <div class="bg-grid"></div>
+    <div class="bg-noise"></div>
+  </div>
+
+  <!-- Custom cursor (fine pointers only) -->
+  <div class="cursor-dot" aria-hidden="true"></div>
+  <div class="cursor-ring" aria-hidden="true"></div>
+
+  <!-- Navigation -->
+  <nav class="nav" id="navbar" aria-label="Primary">
+    <div class="container nav__inner">
+      <a class="nav__brand" href="#hero" aria-label="Adem Hammami — back to top">
+        <span class="nav__brand-mark mono" aria-hidden="true">A·H</span>
+        <span class="nav__brand-name">adem<span class="nav__brand-accent">hammami</span></span>
+      </a>
+
+      <ul class="nav__links">
+        <li><a href="#hero" class="nav__link" data-spy><span class="nav__idx mono">00</span>Home</a></li>
+        <li><a href="#about" class="nav__link" data-spy><span class="nav__idx mono">01</span>About</a></li>
+        <li><a href="#skills" class="nav__link" data-spy><span class="nav__idx mono">02</span>Skills</a></li>
+        <li><a href="#projects" class="nav__link" data-spy><span class="nav__idx mono">03</span>Work</a></li>
+        <li><a href="#journey" class="nav__link" data-spy><span class="nav__idx mono">04</span>Journey</a></li>
+        <li><a href="#contact" class="nav__link" data-spy><span class="nav__idx mono">05</span>Contact</a></li>
+      </ul>
+
+      <div class="nav__cta-wrap">
+        <a href="mailto:ademh9735@gmail.com" class="nav__cta mono">Let's Talk ↗</a>
+        <button type="button" class="nav__toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
+          <span class="nav__toggle-line"></span>
+          <span class="nav__toggle-line"></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile menu -->
+  <div class="menu" id="mobileMenu" aria-hidden="true">
+    <div class="menu__inner">
+      <nav class="menu__nav" aria-label="Mobile navigation">
+        <a href="#hero" class="menu__link" style="--mi:0"><span class="menu__num mono">00</span><span>Home</span></a>
+        <a href="#about" class="menu__link" style="--mi:1"><span class="menu__num mono">01</span><span>About</span></a>
+        <a href="#skills" class="menu__link" style="--mi:2"><span class="menu__num mono">02</span><span>Skills</span></a>
+        <a href="#projects" class="menu__link" style="--mi:3"><span class="menu__num mono">03</span><span>Work</span></a>
+        <a href="#journey" class="menu__link" style="--mi:4"><span class="menu__num mono">04</span><span>Journey</span></a>
+        <a href="#contact" class="menu__link" style="--mi:5"><span class="menu__num mono">05</span><span>Contact</span></a>
+      </nav>
+      <div class="menu__foot">
+        <a href="mailto:ademh9735@gmail.com" class="menu__email mono">ademh9735@gmail.com</a>
+        <div class="menu__socials">
+          <a href="https://github.com/ademhammami" target="_blank" rel="noopener" class="mono">GitHub</a>
+          <a href="https://www.linkedin.com/in/ademhammami" target="_blank" rel="noopener" class="mono">LinkedIn</a>
+          <a href="https://instagram.com/adem.hammami" target="_blank" rel="noopener" class="mono">Instagram</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <main id="main">
+
+    <!-- ================= HERO ================= -->
+    <section class="hero" id="hero" aria-label="Introduction">
+      <div class="container hero__grid">
+
+        <div class="hero__copy">
+          <p class="hero__eyebrow mono reveal-hero" data-hd="1">
+            <span class="hero__eyebrow-dot" aria-hidden="true"></span>
+            Computer Science Student <span class="hero__eyebrow-sep" aria-hidden="true">/</span> ISIMS Sfax
+          </p>
+
+          <h1 class="hero__title">
+            <span class="hero__line" data-hd="2"><span class="hero__word">Building</span></span>
+            <span class="hero__line" data-hd="3"><span class="hero__word">Digital</span></span>
+            <span class="hero__line" data-hd="4"><span class="hero__word">Experiences</span></span>
+            <span class="hero__line" data-hd="5"><span class="hero__word">with <em class="hero__accent">Code.</em></span></span>
+          </h1>
+
+          <p class="hero__sub reveal-hero" data-hd="6">Computer Science student exploring software, intelligent systems and digital products — one shipped project at a time.</p>
+
+          <div class="hero__ctas reveal-hero" data-hd="7">
+            <a href="#projects" class="btn btn--primary magnetic">
+              View My Work
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+            </a>
+            <a href="#contact" class="btn btn--ghost magnetic">
+              Let's Connect
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 2 11 13"/><path d="M22 2 15 22l-4-9-9-4Z"/></svg>
+            </a>
+          </div>
+
+          <dl class="hero__meta reveal-hero" data-hd="8">
+            <div class="hero__meta-item">
+              <dt class="mono">Based</dt>
+              <dd>Sfax, Tunisia</dd>
+            </div>
+            <div class="hero__meta-item">
+              <dt class="mono">Studying</dt>
+              <dd>CS @ ISIMS</dd>
+            </div>
+            <div class="hero__meta-item">
+              <dt class="mono">Focus</dt>
+              <dd>Software · AI · Products</dd>
+            </div>
+          </dl>
+        </div>
+
+        <div class="hero__art reveal-hero" data-hd="6">
+          <div class="portrait-wrap" data-parallax>
+            <div class="portrait-grid" aria-hidden="true"></div>
+
+            <span class="portrait__label portrait__label--tl mono" aria-hidden="true">profile.jpg</span>
+            <span class="portrait__label portrait__label--br mono" aria-hidden="true">isims_sfax · cs · <b>2026</b></span>
+
+            <figure class="portrait">
+              <img src="imj.jpeg" alt="Portrait of Adem Hammami" width="788" height="849" fetchpriority="high" decoding="async">
+              <span class="portrait__corner portrait__corner--tl" aria-hidden="true"></span>
+              <span class="portrait__corner portrait__corner--br" aria-hidden="true"></span>
+              <figcaption class="portrait__meta mono">
+                <span class="portrait__meta-dot" aria-hidden="true"></span>
+                <span>available</span>
+              </figcaption>
+            </figure>
+
+            <span class="sys-tag portrait__tag--tr mono"><i aria-hidden="true"></i>status // building</span>
+            <span class="sys-tag portrait__tag--bl mono"><i aria-hidden="true"></i>focus // ai</span>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="hero__scroll" aria-hidden="true">
+        <span class="hero__scroll-text mono">SCROLL</span>
+        <span class="hero__scroll-line"></span>
+      </div>
+    </section>
+
+    <!-- ================= ABOUT ================= -->
+    <section class="section" id="about">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="section__label mono"><span class="section__num">01</span><span class="section__rule" aria-hidden="true"></span>About</p>
+        </header>
+
+        <div class="about">
+          <div class="about__main">
+            <h2 class="about__statement reveal">I build to learn,<br>and I <em>learn to build.</em></h2>
+            <div class="about__copy reveal" data-delay="80">
+              <p>I'm Adem Hammami — a Computer Science student at ISIMS Sfax. My work sits where software, data and intelligent systems meet: studied in class, tested in real projects, shipped to be used.</p>
+              <p>Right now I'm deepening web and software development while growing into artificial intelligence — building small, shipping often, and letting every project sharpen the next.</p>
+            </div>
+            <p class="about__sign mono reveal" data-delay="140">— student with direction,<br>&nbsp;&nbsp;&nbsp;and the discipline to get there.</p>
+          </div>
+
+          <aside class="about__side reveal" data-delay="100">
+            <dl class="facts">
+              <div class="fact">
+                <dt class="mono">Education</dt>
+                <dd>ISIMS Sfax — Computer Science</dd>
+              </div>
+              <div class="fact">
+                <dt class="mono">Based in</dt>
+                <dd>Sfax, Tunisia</dd>
+              </div>
+              <div class="fact">
+                <dt class="mono">Status</dt>
+                <dd>Open to internships &amp; collaboration</dd>
+              </div>
+            </dl>
+
+            <dl class="stats">
+              <div class="stat">
+                <dt class="mono stat__label">Age</dt>
+                <dd class="stat__value" id="ageValue">–</dd>
+              </div>
+              <div class="stat">
+                <dt class="mono stat__label">Projects</dt>
+                <dd class="stat__value" data-count="3">0</dd>
+              </div>
+              <div class="stat">
+                <dt class="mono stat__label">Technologies</dt>
+                <dd class="stat__value" data-count="6" data-suffix="+">0</dd>
+              </div>
+              <div class="stat">
+                <dt class="mono stat__label">Curiosity</dt>
+                <dd class="stat__value">∞</dd>
+              </div>
+            </dl>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SKILLS ================= -->
+    <section class="section section--alt" id="skills">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="section__label mono"><span class="section__num">02</span><span class="section__rule" aria-hidden="true"></span>Expertise</p>
+          <h2 class="section__title">A toolkit built<br><span class="section__title-accent">to be used.</span></h2>
+          <p class="section__desc">Organized by discipline, not decoration — built through projects, coursework and continuous self-study.</p>
+        </header>
+
+        <div class="skill-grid">
+          <article class="skill-group reveal">
+            <header class="skill-group__head">
+              <span class="skill-group__num mono">01</span>
+              <h3 class="skill-group__title">Development</h3>
+              <span class="skill-group__tag mono">core</span>
+            </header>
+            <p class="skill-group__desc">Interface, logic and structure — built to work beautifully everywhere.</p>
+            <ul class="skill-group__list">
+              <li class="skill-chip mono">HTML5</li>
+              <li class="skill-chip mono">CSS3</li>
+              <li class="skill-chip mono">JavaScript</li>
+              <li class="skill-chip mono">PHP</li>
+              <li class="skill-chip mono">Responsive Design</li>
+              <li class="skill-chip mono">Semantic HTML</li>
+            </ul>
+          </article>
+
+          <article class="skill-group reveal" data-delay="80">
+            <header class="skill-group__head">
+              <span class="skill-group__num mono">02</span>
+              <h3 class="skill-group__title">Data</h3>
+              <span class="skill-group__tag mono">working</span>
+            </header>
+            <p class="skill-group__desc">Storing, querying and making sense of real data.</p>
+            <ul class="skill-group__list">
+              <li class="skill-chip mono">SQL</li>
+              <li class="skill-chip mono">Relational design</li>
+              <li class="skill-chip mono">Data-driven apps</li>
+            </ul>
+          </article>
+
+          <article class="skill-group reveal" data-delay="120">
+            <header class="skill-group__head">
+              <span class="skill-group__num mono">03</span>
+              <h3 class="skill-group__title">Tools &amp; Practices</h3>
+              <span class="skill-group__tag mono">daily</span>
+            </header>
+            <p class="skill-group__desc">The habits that make the work reliable and repeatable.</p>
+            <ul class="skill-group__list">
+              <li class="skill-chip mono">Git &amp; GitHub</li>
+              <li class="skill-chip mono">Clean code</li>
+              <li class="skill-chip mono">Web standards</li>
+              <li class="skill-chip mono">Self-learning</li>
+            </ul>
+          </article>
+
+          <article class="skill-group reveal" data-delay="160">
+            <header class="skill-group__head">
+              <span class="skill-group__num mono">04</span>
+              <h3 class="skill-group__title">Emerging Technologies</h3>
+              <span class="skill-group__tag mono">learning</span>
+            </header>
+            <p class="skill-group__desc">Where I'm heading — how machines learn and understand.</p>
+            <ul class="skill-group__list">
+              <li class="skill-chip mono">Python</li>
+              <li class="skill-chip mono">NLP</li>
+              <li class="skill-chip mono">Intelligent systems</li>
+              <li class="skill-chip mono">AI fundamentals</li>
+            </ul>
+          </article>
+        </div>
+
+        <p class="stack-strip mono reveal">
+          <span class="stack-strip__label">// core stack</span>
+          <span class="stack-strip__items">HTML <span class="stack-strip__sep" aria-hidden="true">·</span> CSS <span class="stack-strip__sep" aria-hidden="true">·</span> JS <span class="stack-strip__sep" aria-hidden="true">·</span> PHP <span class="stack-strip__sep" aria-hidden="true">·</span> SQL <span class="stack-strip__sep" aria-hidden="true">·</span> Python</span>
+        </p>
+      </div>
+    </section>
+
+    <!-- ================= FEATURED ================= -->
+    <section class="section" id="featured">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="section__label mono"><span class="section__num">03</span><span class="section__rule" aria-hidden="true"></span>Case Study</p>
+          <h2 class="section__title">One idea,<br><span class="section__title-accent">built from zero.</span></h2>
+          <p class="section__desc">The full story of my strongest project so far — from problem to working product.</p>
+        </header>
+
+        <article class="featured reveal" id="ai-chat">
+          <div class="featured__info">
+            <span class="featured__badge mono">Intelligent Systems</span>
+            <h3 class="featured__title">AI Chat Assistant</h3>
+            <p class="featured__desc">An intelligent conversational assistant powered by machine learning — built to explore how machines understand natural language and respond with meaning.</p>
+
+            <div class="story" role="list">
+              <div class="story__step" role="listitem">
+                <p class="mono story__label">The Problem</p>
+                <p class="story__text">Most interfaces only respond to rigid, keyword-perfect input. Ask a question the way people actually talk — and they break.</p>
+              </div>
+              <div class="story__step" role="listitem">
+                <p class="mono story__label">The Solution</p>
+                <p class="story__text">A machine-learning powered system that parses intent and returns relevant, natural responses in real time.</p>
+              </div>
+              <div class="story__step" role="listitem">
+                <p class="mono story__label">The Result</p>
+                <p class="story__text">A working intelligent assistant — and a first, real step into artificial intelligence.</p>
+              </div>
+            </div>
+
+            <ul class="project-tags" aria-label="Technologies used">
+              <li>Python</li><li>NLP</li><li>AI</li>
+            </ul>
+
+            <div class="featured__actions">
+              <button type="button" class="btn btn--primary magnetic" data-project="ai-chat" aria-haspopup="dialog">
+                View Case Study
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg>
+              </button>
+            </div>
+          </div>
+
+          <div class="featured__visual">
+            <div class="chat-mock" aria-hidden="true">
+              <span class="chat-mock__label mono">conversation.log</span>
+              <div class="chat-mock__msg chat-mock__msg--user">What can you build?</div>
+              <div class="chat-mock__msg chat-mock__msg--ai">
+                <span class="chat-mock__type"><i></i><i></i><i></i></span>
+                <span>Digital experiences — software, products,<br>and intelligent systems.</span>
+              </div>
+              <div class="chat-mock__msg chat-mock__msg--user">Who are you?</div>
+              <div class="chat-mock__msg chat-mock__msg--ai">A CS student at ISIMS Sfax,<br>building with intent.</div>
+              <span class="chat-mock__cursor" aria-hidden="true"></span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ================= PROJECTS ================= -->
+    <section class="section section--alt" id="projects">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="section__label mono"><span class="section__num">04</span><span class="section__rule" aria-hidden="true"></span>Selected Work</p>
+          <h2 class="section__title">Built to be used,<br><span class="section__title-accent">not just shown.</span></h2>
+          <p class="section__desc">Real projects I designed, developed and shipped. Tap any card for the full story.</p>
+        </header>
+
+        <div class="projects">
+          <article class="project-card project-card--wide reveal" data-project="portfolio">
+            <div class="project-card__visual">
+              <div class="browser-mock" aria-hidden="true">
+                <span class="browser-mock__bar"><i></i><i></i><i></i><b>adem-hammami.dev</b></span>
+                <span class="browser-mock__line browser-mock__line--1"></span>
+                <span class="browser-mock__line browser-mock__line--2"></span>
+                <span class="browser-mock__line browser-mock__line--3"></span>
+                <span class="browser-mock__pill"></span>
+              </div>
+            </div>
+            <div class="project-card__body">
+              <div class="project-card__top">
+                <span class="project-card__cat mono">Web Development</span>
+                <h3 class="project-card__title">Portfolio Website</h3>
+              </div>
+              <p class="project-card__desc">A premium, responsive personal portfolio — designed and built from scratch. The site you're looking at right now.</p>
+              <ul class="project-tags" aria-label="Technologies used">
+                <li>HTML5</li><li>CSS3</li><li>JavaScript</li>
+              </ul>
+              <div class="project-card__actions">
+                <a href="#hero" class="project-link">Live Demo</a>
+                <button type="button" class="project-link" data-project="portfolio">Details</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-delay="120" data-project="dashboard">
+            <div class="project-card__visual">
+              <div class="bars" aria-hidden="true">
+                <i style="--h:42%"></i><i style="--h:68%"></i><i style="--h:35%"></i>
+                <i style="--h:82%"></i><i style="--h:58%"></i><i style="--h:74%"></i>
+              </div>
+            </div>
+            <div class="project-card__body">
+              <div class="project-card__top">
+                <span class="project-card__cat mono">Web App · Data</span>
+                <h3 class="project-card__title">Data Dashboard</h3>
+              </div>
+              <p class="project-card__desc">An interactive analytics dashboard that visualizes datasets with dynamic charts and near real-time updates.</p>
+              <ul class="project-tags" aria-label="Technologies used">
+                <li>JavaScript</li><li>SQL</li><li>PHP</li>
+              </ul>
+              <div class="project-card__actions">
+                <button type="button" class="project-link" data-project="dashboard">Details</button>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <p class="projects__foot mono reveal">
+          <span class="projects__foot-accent">// more in the lab</span> — new builds shipping as I learn.
+        </p>
+      </div>
+    </section>
+
+    <!-- ================= JOURNEY ================= -->
+    <section class="section" id="journey">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="section__label mono"><span class="section__num">05</span><span class="section__rule" aria-hidden="true"></span>Journey</p>
+          <h2 class="section__title">A path built<br><span class="section__title-accent">step by step.</span></h2>
+          <p class="section__desc">Not a CV — a professional journey. Every step sharpens the next.</p>
+        </header>
+
+        <ol class="timeline">
+          <li class="timeline__item reveal">
+            <span class="timeline__marker" aria-hidden="true"></span>
+            <p class="timeline__date mono">2026</p>
+            <h3 class="timeline__title">Baccalaureate in Computer Science <span class="timeline__tag mono">With Mention</span></h3>
+            <p class="timeline__desc">Specialized secondary studies in computer science, mathematics and logic — where the foundation in programming and algorithmic thinking was built.</p>
+          </li>
+
+          <li class="timeline__item reveal">
+            <span class="timeline__marker" aria-hidden="true"></span>
+            <p class="timeline__date mono">2026</p>
+            <h3 class="timeline__title">Admission to ISIMS Sfax</h3>
+            <p class="timeline__desc">Accepted into the Institut Supérieur d'Informatique et de Multimédia de Sfax — a reference institution for computer science in Tunisia.</p>
+          </li>
+
+          <li class="timeline__item reveal">
+            <span class="timeline__marker timeline__marker--live" aria-hidden="true"></span>
+            <p class="timeline__date mono">2026 — Present</p>
+            <h3 class="timeline__title">Licence in Computer Science</h3>
+            <p class="timeline__desc">Studying the core of computing — programming, data, systems — while shipping projects on the side. Building toward software engineering and AI.</p>
+          </li>
+
+          <li class="timeline__item reveal">
+            <span class="timeline__marker timeline__marker--next" aria-hidden="true"></span>
+            <p class="timeline__date mono">Next</p>
+            <h3 class="timeline__title">Software Engineering · AI · Digital Products</h3>
+            <p class="timeline__desc">The direction is clear: build professional-grade software, master intelligent systems, and ship products people use.</p>
+          </li>
+        </ol>
+
+        <!-- Milestones -->
+        <div class="milestones reveal">
+          <p class="milestones__label mono"><span class="milestones__rule" aria-hidden="true"></span>Milestones</p>
+          <ul class="achievements">
+            <li class="achievement">
+              <span class="achievement__num mono">01</span>
+              <h3 class="achievement__title">Baccalaureate — With Mention</h3>
+              <p class="achievement__desc">Completed secondary education in Computer Science with a Mention.</p>
+            </li>
+            <li class="achievement" data-delay="80">
+              <span class="achievement__num mono">02</span>
+              <h3 class="achievement__title">Admitted to ISIMS Sfax</h3>
+              <p class="achievement__desc">Selected to study Computer Science at a leading Tunisian IT institution.</p>
+            </li>
+            <li class="achievement" data-delay="160">
+              <span class="achievement__num mono">03</span>
+              <h3 class="achievement__title">3 projects, shipped</h3>
+              <p class="achievement__desc">From idea to working product — an AI assistant, a portfolio, and a data dashboard.</p>
+            </li>
+            <li class="achievement" data-delay="240">
+              <span class="achievement__num mono">04</span>
+              <h3 class="achievement__title">Category B Driving License</h3>
+              <p class="achievement__desc">Independence on the road — same principle as software: get moving, stay in control.</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= DIRECTION ================= -->
+    <section class="section section--alt" id="direction">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="section__label mono"><span class="section__num">06</span><span class="section__rule" aria-hidden="true"></span>Direction</p>
+          <h2 class="section__title">What I'm<br><span class="section__title-accent">building toward.</span></h2>
+          <p class="section__desc">Not a claim of expertise — a plan. The craft I'm developing, one project at a time.</p>
+        </header>
+
+        <div class="direction-grid">
+          <article class="direction reveal">
+            <div class="direction__head">
+              <span class="direction__num mono">01</span>
+              <span class="direction__icon mono" aria-hidden="true">&lt;/&gt;</span>
+            </div>
+            <h3 class="direction__title">Software Engineering</h3>
+            <p class="direction__desc">Clean architecture and systems that hold up under real use — studied daily at ISIMS and in my projects.</p>
+            <span class="direction__stage mono">foundations</span>
+          </article>
+
+          <article class="direction reveal" data-delay="80">
+            <div class="direction__head">
+              <span class="direction__num mono">02</span>
+              <span class="direction__icon mono" aria-hidden="true">AI</span>
+            </div>
+            <h3 class="direction__title">Artificial Intelligence</h3>
+            <p class="direction__desc">Teaching machines to understand language — starting with fundamentals and my first intelligent assistant.</p>
+            <span class="direction__stage mono">exploring</span>
+          </article>
+
+          <article class="direction reveal" data-delay="160">
+            <div class="direction__head">
+              <span class="direction__num mono">03</span>
+              <span class="direction__icon mono" aria-hidden="true">{ }</span>
+            </div>
+            <h3 class="direction__title">Digital Products</h3>
+            <p class="direction__desc">Software as a product, not just code — solving real problems for real users, end to end.</p>
+            <span class="direction__stage mono">developing</span>
+          </article>
+
+          <article class="direction reveal" data-delay="240">
+            <div class="direction__head">
+              <span class="direction__num mono">04</span>
+              <span class="direction__icon mono" aria-hidden="true">◐</span>
+            </div>
+            <h3 class="direction__title">SaaS</h3>
+            <p class="direction__desc">Products delivered as a service — durable, scalable, and built to be relied on.</p>
+            <span class="direction__stage mono">next</span>
+          </article>
+        </div>
+
+        <p class="direction__note mono reveal">
+          <span class="direction__note-accent">// status:</span> motivated student · strong fundamentals · shipping consistently
+        </p>
+      </div>
+    </section>
+
+    <!-- ================= BRAND STATEMENT ================= -->
+    <section class="statement" aria-label="Personal brand">
+      <div class="container">
+        <p class="statement__label mono reveal">Personal brand</p>
+        <h2 class="statement__title reveal">
+          <span class="st-1">Learn.</span>
+          <span class="st-2">Build.</span>
+          <span class="st-3">Evolve.</span>
+        </h2>
+        <p class="statement__note mono reveal">// one project at a time</p>
+      </div>
+    </section>
+
+    <!-- ================= CONTACT ================= -->
+    <section class="section section--contact" id="contact">
+      <div class="container">
+        <header class="section__head section__head--center reveal">
+          <p class="section__label mono section__label--center"><span class="section__num">07</span><span class="section__rule" aria-hidden="true"></span>Contact</p>
+          <h2 class="section__title">Have an idea<br><span class="section__title-accent">worth building?</span></h2>
+          <p class="section__desc section__desc--center">Let's build something meaningful.</p>
+        </header>
+
+        <div class="contact__cta-row reveal">
+          <a href="mailto:ademh9735@gmail.com" class="btn btn--primary magnetic">
+            Contact Me
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+          </a>
+          <a href="https://wa.me/21620470144" target="_blank" rel="noopener" class="btn btn--ghost magnetic">
+            WhatsApp / Call
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          </a>
+        </div>
+
+        <div class="contact">
+          <form class="contact__form reveal" id="contactForm" novalidate>
+            <div class="field">
+              <label for="cf-name" class="mono">Name</label>
+              <input type="text" id="cf-name" name="name" placeholder="Your name" autocomplete="name" required>
+            </div>
+            <div class="field">
+              <label for="cf-email" class="mono">Email</label>
+              <input type="email" id="cf-email" name="email" placeholder="you@example.com" autocomplete="email" required>
+            </div>
+            <div class="field">
+              <label for="cf-message" class="mono">Message</label>
+              <textarea id="cf-message" name="message" rows="5" placeholder="Tell me about your idea…" required></textarea>
+            </div>
+            <button type="submit" class="btn btn--primary magnetic">
+              Send Message
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 2 11 13"/><path d="M22 2 15 22l-4-9-9-4Z"/></svg>
+            </button>
+            <p class="contact__form-note mono" id="formNote" role="status" aria-live="polite"></p>
+          </form>
+
+          <div class="contact__channels reveal" data-delay="120">
+            <a href="mailto:ademh9735@gmail.com" class="channel magnetic">
+              <span class="channel__label mono">Email</span>
+              <span class="channel__value">ademh9735@gmail.com</span>
+              <span class="channel__arrow mono" aria-hidden="true">↗</span>
+            </a>
+            <a href="https://github.com/ademhammami" target="_blank" rel="noopener" class="channel magnetic">
+              <span class="channel__label mono">GitHub</span>
+              <span class="channel__value">github.com/ademhammami</span>
+              <span class="channel__arrow mono" aria-hidden="true">↗</span>
+            </a>
+            <a href="https://www.linkedin.com/in/ademhammami" target="_blank" rel="noopener" class="channel magnetic">
+              <span class="channel__label mono">LinkedIn</span>
+              <span class="channel__value">linkedin.com/in/ademhammami</span>
+              <span class="channel__arrow mono" aria-hidden="true">↗</span>
+            </a>
+            <a href="https://instagram.com/adem.hammami" target="_blank" rel="noopener" class="channel magnetic">
+              <span class="channel__label mono">Instagram</span>
+              <span class="channel__value">@adem.hammami</span>
+              <span class="channel__arrow mono" aria-hidden="true">↗</span>
+            </a>
+            <a href="tel:+21620470144" class="channel magnetic">
+              <span class="channel__label mono">Phone</span>
+              <span class="channel__value">+216 20 470 144</span>
+              <span class="channel__arrow mono" aria-hidden="true">↗</span>
+            </a>
+            <div class="channel channel--static">
+              <span class="channel__label mono">Location</span>
+              <span class="channel__value">Sfax, Tunisia · UTC+1</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <p class="footer__name">Adem Hammami</p>
+        <p class="footer__role mono">Computer Science Student — ISIMS Sfax</p>
+      </div>
+      <div class="footer__socials">
+        <a href="https://github.com/ademhammami" target="_blank" rel="noopener" class="mono">GitHub</a>
+        <a href="https://www.linkedin.com/in/ademhammami" target="_blank" rel="noopener" class="mono">LinkedIn</a>
+        <a href="https://instagram.com/adem.hammami" target="_blank" rel="noopener" class="mono">Instagram</a>
+        <a href="mailto:ademh9735@gmail.com" class="mono">Email</a>
+      </div>
+      <a href="#hero" class="footer__top magnetic" aria-label="Back to top">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m18 15-6-6-6 6"/></svg>
+      </a>
+    </div>
+    <div class="container">
+      <p class="footer__copy mono">© 2026 Adem Hammami — designed &amp; built by me, no templates.</p>
+    </div>
+  </footer>
+
+  <!-- Project detail modal -->
+  <div class="modal" id="projectModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" hidden>
+    <div class="modal__backdrop" data-close></div>
+    <div class="modal__panel">
+      <button type="button" class="modal__close" data-close aria-label="Close project details">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+      </button>
+      <p class="modal__category mono"></p>
+      <h3 class="modal__title" id="modalTitle"></h3>
+      <p class="modal__tagline" id="modalTagline"></p>
+
+      <div class="modal__body">
+        <div class="modal__story" id="modalStory"></div>
+        <aside class="modal__facts">
+          <div class="modal__fact">
+            <h4 class="mono">Role</h4>
+            <p id="modalRole"></p>
+          </div>
+          <div class="modal__fact">
+            <h4 class="mono">Key features</h4>
+            <ul id="modalFeatures"></ul>
+          </div>
+          <div class="modal__fact">
+            <h4 class="mono">Stack</h4>
+            <ul class="project-tags" id="modalTags"></ul>
+          </div>
+          <div class="modal__fact">
+            <h4 class="mono">Links</h4>
+            <div class="modal__links" id="modalLinks"></div>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </div>
+
+  <script src="assets/main.js"></script>
+</body>
+</html>
